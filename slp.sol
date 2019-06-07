@@ -1,4 +1,4 @@
-```pragma solidity ^0.4.25;
+pragma solidity ^0.4.25;
 
 contract SafeMath {
     constructor() public {
@@ -69,4 +69,4 @@ contract SLPToken is SafeMath {
     function () public payable {
         revert();
     }
-}```
+}
