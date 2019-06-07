@@ -20,7 +20,7 @@ SLP是SilkPay社区价值共识，是基于Silubium公链开发的[通证](https
 * 需要使用的技术资料参见[Silubium官方](https://github.com/SilubiumProject/silubium-java-lib#%E4%BA%A4%E6%98%93%E6%89%80%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)。
 
 ### 离线生成SLP地址
-```html
+```
 //Silubium原生资产为SLU，SLP与SLU使用同一地址。SLP转帐需要消耗SLU燃料。
 @Test
 public void testbip44EthereumEcKey() throws MnemonicException.MnemonicLengthException, ValidationException {                    
@@ -65,7 +65,7 @@ public void testbip44EthereumEcKey() throws MnemonicException.MnemonicLengthExce
 ```
 
 ### 扫描实例
-```html
+```
 // 起始页码为0
 int i = 0;
 // 获取指定高度第一页的交易，pageSize为分页大小参数，建议设置为500，且不要随意变动该值，防止分页出现粘连数据
@@ -108,7 +108,7 @@ while (true) {
     }
 }
 ```
-```html
+```
 // 前一步已经取得块的交易信息
 // 现在对块的交易信息进行逐个解析
 // 通过对com.spark.bc.wallet.api.entity.bcc.TxsBean属性issrc20Transfer判断是TOKEN交易还是SLU交易
@@ -145,7 +145,7 @@ for (ReceiptBean tokenTransaction : receiptBeans) {
 ```
 
 ### SLP转帐
-```html
+```
 /**
   * 测试创建SLU交易或者TOKEN交易 （可以同时发送SLU和TOKEN）
   * 每笔交易均会消耗slu，token不会被消耗
